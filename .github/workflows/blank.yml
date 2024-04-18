@@ -28,7 +28,7 @@ jobs:
       - name: Print Created NSG Rule Name
         run: echo "Rule Name ${{ steps.rule.outputs.rule_name }}"
 
-      - name: Remove NSG Rule
+      - name: Remove NSG Rule1
         uses: venura9/manage-nsg@master
         with:
           azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
